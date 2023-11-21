@@ -26,3 +26,7 @@ export interface SearchProps {
   word: string
   setWord: (word: string) => void
 }
+
+export interface DefCardProps {
+  wordDef: string
+}

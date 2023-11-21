@@ -22,7 +22,9 @@ const page = async ({ searchParams }: HomeProps) => {
         </div>
         <div>
           <div>
-            <DefCard/>
+            <DefCard
+              wordDef={wordDef}
+            />
           </div>
           <div>
             {!isDataEmpty ? (
