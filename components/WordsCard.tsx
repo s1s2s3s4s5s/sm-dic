@@ -2,7 +2,7 @@ import React from 'react'
 import { WordCardProps } from '@/types';
 
 interface CardProps{
-    allwords: any[]
+    allwords: WordCardProps
 }
 
 const WordsCard = ({ allwords }: CardProps) => {
