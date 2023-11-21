@@ -25,13 +25,11 @@ export const Dictionary = async ({ word }: { word: string }) => {
 		'X-RapidAPI-Host': 'dictionary-by-api-ninjas.p.rapidapi.com',
 	}
 
-	try {
-		const response = await fetch(url, { headers: headers })
-		const result = await response.json()
-		return result 
-	} catch (error) {
-		console.error(error)
-	}
+
+	const response = await fetch(url, { headers: headers })
+	const result = await response.json()
+	return result 
+
 }
 
 export const RandomQuote = async () => {

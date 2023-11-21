@@ -28,5 +28,7 @@ export interface SearchProps {
 }
 
 export interface DefCardProps {
-  wordDef: string
+  definition: string
+  word: string
+  valid: boolean
 }
