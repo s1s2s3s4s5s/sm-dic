@@ -30,7 +30,9 @@ const page = async ({ searchParams }: HomeProps) => {
             {!isDataEmpty ? (
               <section>
                 <div className='home__wrapper' >
-                  <WordsCard/>
+                  <WordsCard
+                    allwords={allWords}
+                  />
                 </div>
               </section>
             ) : (

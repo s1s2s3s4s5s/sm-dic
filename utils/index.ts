@@ -8,13 +8,11 @@ export const Thesaurus = async ({ word }: { word: string }) => {
 		'X-RapidAPI-Host': 'thesaurus-by-api-ninjas.p.rapidapi.com',
 	}
 
-	try {
+
 		const response = await fetch(url, { headers: headers })
 		const result = await response.json()
 		return result 
-	} catch (error) {
-		console.error(error)
-	}
+
 }
 
 export const Dictionary = async ({ word }: { word: string }) => {
