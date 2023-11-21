@@ -10,11 +10,11 @@ export interface CustomButtonProps {
 }
 
 export interface HomeProps {
-  searchParams: string
+  searchParams: Words
 }
 
 export interface Words {
-  title: string
+  word: string
 }
 
 export interface WordProps {
