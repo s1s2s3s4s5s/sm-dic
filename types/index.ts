@@ -35,6 +35,6 @@ export interface DefCardProps {
 
 export interface WordCardProps {
   word: string
-  synonyms: any[]
-  antonyms: any[]
+  synonyms: []
+  antonyms: []
 }
