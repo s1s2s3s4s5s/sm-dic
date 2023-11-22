@@ -6,7 +6,7 @@ import { Searchbar, DefCard, WordsCard, QuoteCard } from '@/components'
 const page = async ({ searchParams }: HomeProps) => {
   const wordDef = await Dictionary({ word: searchParams.word || '' }) 
   const allWords = await Thesaurus({ word: searchParams.word || '' })
-  const quote = RandomQuote()
+  const quote = await RandomQuote()
 
   const isDataEmpty = !Array.isArray(allWords) || allWords.length <1 || !allWords
   
