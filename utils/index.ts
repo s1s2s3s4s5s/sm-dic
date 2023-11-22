@@ -30,19 +30,17 @@ export const Dictionary = async ({ word }: { word: string }) => {
 
 }
 
-export const RandomQuote = async () => {
+export async function RandomQuote() {
 	const url = `https://quotes-by-api-ninjas.p.rapidapi.com/v1/quotes`
 
-  const headers = {
-		'X-RapidAPI-Key': X_RapidAPI_KEY,
-		'X-RapidAPI-Host': 'quotes-by-api-ninjas.p.rapidapi.com',
-	}
+	const headers = {
+			'X-RapidAPI-Key': X_RapidAPI_KEY,
+			'X-RapidAPI-Host': 'quotes-by-api-ninjas.p.rapidapi.com',
+		}
 
-	try {
-		const response = await fetch(url, { headers: headers })
-		const result = await response.json()
-		return result 
-	} catch (error) {
-		console.error(error)
-	}
+
+	const response = await fetch(url, { headers: headers })
+	const result = await response.json()
+	return result 
+
 }
