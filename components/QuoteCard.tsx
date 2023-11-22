@@ -1,4 +1,4 @@
-import { Quote } from "lucide-icons"
+import { Quote } from "lucide-react"
 import { QuoteProps } from "@/types"
 
 interface Quote {
