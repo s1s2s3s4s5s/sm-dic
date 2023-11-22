@@ -42,3 +42,9 @@ export interface WordCardProps {
   synonyms: Word[]
   antonyms: Word[]
 }
+
+export interface QuoteProps {
+  quote: string
+  author: string
+  category: string
+}

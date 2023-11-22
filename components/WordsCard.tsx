@@ -5,7 +5,7 @@ interface CardProps{
     allwords: WordCardProps
 }
 
-const WordsCard = ({ allwords }: WordCardProps) => {
+const WordsCard = ({ allwords }: CardProps) => {
     return (
         <div className='w-full flex flex-1 justify-center items-center p-20 border-grey-100' >
 			<div className='bg-primary-blue-100 flex-center flex-col ' >
