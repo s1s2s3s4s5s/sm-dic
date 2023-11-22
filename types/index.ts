@@ -33,8 +33,12 @@ export interface DefCardProps {
   valid: boolean
 }
 
+interface Word {
+  [key: number]: string
+} 
+
 export interface WordCardProps {
   word: string
-  synonyms: []
-  antonyms: []
+  synonyms: Word[]
+  antonyms: Word[]
 }
