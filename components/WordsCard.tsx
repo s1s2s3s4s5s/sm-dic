@@ -8,7 +8,7 @@ interface CardProps{
 const WordsCard = ({ allwords }: CardProps) => {
     return (
         <div className='w-full flex flex-1 justify-center items-center p-20 border-grey-100' >
-			<div className='bg-primary-blue-100 flex-center flex-col ' >
+			{/* <div className='bg-primary-blue-100 flex-center flex-col ' >
 				{allwords?.synonyms.map((word: string) => (
                     <div className='flex flex-col justify-center items-center' >
                         <p className='text-normal font-medium text-black-100' >{word}</p>
@@ -21,7 +21,7 @@ const WordsCard = ({ allwords }: CardProps) => {
                         <p className='text-normal font-medium text-black-100' >{word}</p>
                     </div>
                 ))}
-			</div>
+			</div> */}
 		</div>
     )
 }
