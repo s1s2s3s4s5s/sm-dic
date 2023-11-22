@@ -5,18 +5,6 @@ interface Quote {
   quote: QuoteProps[]
 }
 
-const Card = ({ quote }: QuoteProps) => {
-  return (
-    <>
-      <h3 className="text-black font-medium" > {quote.quote} </h3>
-      <div className="flex flex-col justify-center items-center " >
-        <p className="text-gray-700 font-light" >"{quote.author}"</p>
-        <p className="text-gray-700 font-light">"{quote.category}"</p>
-    </div>
-  </>
-  )
-}
-
 
 const QuoteCard = ({ quote }: Quote) => {
   return (
@@ -26,7 +14,13 @@ const QuoteCard = ({ quote }: Quote) => {
       </div>
       <div className="flex flex-col justify-center items-center rounded-xl bg-gray-100 w-full" >
         {quote?.map((item) => (
-          <Card quote={item} />
+          <>
+            <h3 className="text-black font-medium" > {item.quote} </h3>
+            <div className="flex flex-col justify-center items-center " >
+              <p className="text-gray-700 font-light" >"{item.author}"</p>
+              <p className="text-gray-700 font-light">"{item.category}"</p>
+            </div>
+          </>
         ))}
       </div>
       <div>
