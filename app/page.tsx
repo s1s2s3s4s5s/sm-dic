@@ -7,8 +7,6 @@ const page = async ({ searchParams }: HomeProps) => {
   const wordDef = await Dictionary({ word: searchParams.word || '' }) 
   const allWords = await Thesaurus({ word: searchParams.word || '' })
   const quote = await RandomQuote()
-
-  const isDataEmpty = !Array.isArray(allWords) || allWords.length <1 || !allWords
   
   return (
     <main className='overflow-hidden' >
@@ -27,7 +25,7 @@ const page = async ({ searchParams }: HomeProps) => {
             />
           </div>
           <div>
-             {!isDataEmpty ? (
+             {!allWords ? (
               <section>
                 <div className='home__wrapper' >
                   <WordsCard
