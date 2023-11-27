@@ -25,7 +25,6 @@ const page = async ({ searchParams }: HomeProps) => {
             />
           </div>
           <div>
-             {allWords ? (
               <section>
                 <div className='home__wrapper' >
                   <WordsCard
@@ -33,11 +32,6 @@ const page = async ({ searchParams }: HomeProps) => {
                   />
                 </div>
               </section>
-            ) : (
-              <div className="home__error-container" >
-                <h2 className="text-black text-xl font-bold" >Oops, no results</h2>
-              </div>
-            )}
           </div>
           <div>
             <QuoteCard
