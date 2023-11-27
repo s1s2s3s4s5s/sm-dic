@@ -11,7 +11,7 @@ const WordsCard = ({ allwords }: CardProps) => {
 			<div className='bg-primary-blue-100 flex-center flex-col ' >
 				{allwords?.synonyms.map((item) => (
                     <div className='flex flex-col justify-center items-center' >
-                        <p className='text-normal font-medium text-black-100' >{item}</p>
+                        <span className='text-normal font-medium text-black-100' >{item}</span>
                     </div>
                 ))}
 			</div>
