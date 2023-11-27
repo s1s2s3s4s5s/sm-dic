@@ -25,7 +25,7 @@ const page = async ({ searchParams }: HomeProps) => {
             />
           </div>
           <div>
-             {!allWords ? (
+             {allWords ? (
               <section>
                 <div className='home__wrapper' >
                   <WordsCard
