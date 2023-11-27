@@ -39,8 +39,8 @@ interface Word {
 
 export interface WordCardProps {
   word: string
-  synonyms: Word[]
-  antonyms: Word[]
+  synonyms: string[]
+  antonyms: string[]
 }
 
 export interface QuoteProps {
