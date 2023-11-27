@@ -10,16 +10,16 @@ const WordsCard = ({ allwords }: CardProps) => {
     return (
         <div className='w-full flex flex-1 justify-center items-center p-20 border-grey-100' >
 			<div className='bg-primary-blue-100 flex-center flex-col ' >
-				{synonyms.map((key, item) => (
+				{synonyms.map((item) => (
                     <div className='flex flex-col justify-center items-center' >
-                        <span className='text-normal font-medium text-black-100' key={key} >{item as ReactNode}</span>
+                        <span className='text-normal font-medium text-black-100' >{item as ReactNode}</span>
                     </div>
                 ))}
 			</div>
 			<div className='bg-primary-blue-100 flex-center flex-col ' >
-				{antonyms.map((key, item) => (
+				{antonyms.map((item) => (
                     <div className='flex flex-col justify-center items-center' >
-                        <span className='text-normal font-medium text-black-100' key={key} >{item as ReactNode}</span>
+                        <span className='text-normal font-medium text-black-100' >{item as ReactNode}</span>
                     </div>
                 ))}
 			</div> 
