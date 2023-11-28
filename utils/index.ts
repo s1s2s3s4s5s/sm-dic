@@ -1,7 +1,7 @@
 const X_RapidAPI_KEY = "764d290df7msh71c363c3c9ed388p143c12jsn08e608baa86a"
 
 export const Thesaurus = async ({ word }: { word: string }) => {
-	const url = `https://thesaurus-by-api-ninjas.p.rapidapi.com/v1/thesaurus?word=${word}`
+	const url = `https://thesaurus-by-api-ninjas.p.rapidapi.com/v1/thesaurus?word=${word || 'bright'}`
 
   const headers = {
 		'X-RapidAPI-Key': X_RapidAPI_KEY,
