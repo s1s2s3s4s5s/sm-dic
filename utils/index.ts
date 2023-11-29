@@ -16,7 +16,7 @@ export const Thesaurus = async ({ word }: { word: string }) => {
 }
 
 export const Dictionary = async ({ word }: { word: string }) => {
-	const url = `https://dictionary-by-api-ninjas.p.rapidapi.com/v1/dictionary?word=${word}`
+	const url = `https://dictionary-by-api-ninjas.p.rapidapi.com/v1/dictionary?word=${word || 'bright'}`
 
   const headers = {
 		'X-RapidAPI-Key': X_RapidAPI_KEY,
