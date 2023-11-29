@@ -49,7 +49,7 @@ const updateSearchParams = (word: string,) => {
           name="model"
           value={word}
           onChange={(e) => setWord(e.target.value)}
-          placeholder="Car"
+          placeholder="Bright"
           className="searchbar__input"
         />
         <SearchButton
